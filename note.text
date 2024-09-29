@@ -1,0 +1,370 @@
+DAY-2 Class
+-----------
+
+FAQ: What is UI & UX?
+Ans: 
+-UX is user experience - Prepare the plan
+-UI is user interface - build according to the plain
+
+
+FAQ: What is Computer Network?
+Ans: A computer Network is nothing but a group of computers
+     connecting with each other wired or wifi for sharing information & Resources.
+
+
+FAQ: What are various type of Network?
+Ans:
+    -Lan [Local Area Network]
+    -Man [Metropolitan Area Network]
+    -WAN [Wide Area Network]
+
+
+FAQ: What is Internet?
+Ans: Internet is a wide area networks that connects a computers all over world
+     
+
+FAQ: What is Web?
+Ans: *internet is network with no limits anybody can access information anywhere
+     -Web is a portion/part of internet with restricted access/
+     -The latest version of Web is 'Web3'
+
+
+FAQ: What are Web Principles?
+Ans: *accessibility, *internationalization, *privacy, *security.
+      if does't have match above web principles on website will be rejected
+
+
+
+
+
+
+
+
+
+
+
+Day-3 Class
+------------
+1.What is Network
+2.Types of Networks
+3.Internet
+4.Web[Tim Berners Lee]
+5.Web Principles & Standards
+     -accessibility
+     -internationalization
+     -security
+     -privacy
+6.web version [web3]
+7.WebComponent & Services
+          -Website
+          -Web Application
+          -Blogs
+          -Micro Blogs
+          -Podcasting[pod-multimedia]
+          -Wiki etc..
+
+
+
+
+               Web Application
+          --------------------------
+1.Web Application Architecture
+-application comprises 3 layers and 3 tires
+*Application runs in 3 tires
+     a)Database Tier
+     b)Application Tire
+     c)Presentation Tire
+
+*Application build in 3 layers
+     a)Database Layer
+     b)Application Layer | Business Layer
+     c)UI Layer
+
+
+-FrontEnd
+     a)UI Layer
+-BackEnd
+     a)Application
+     b)Database Layer
+
+
+2.Setup Environment for Web Application
+a)Install Node Js on your PC
+-Node Js is an Open Source and cross platform JavaScript runtime used by developers to build
+     a)Web Application
+     b)Servers
+     c)Scripts
+     d)CLI tools [Command Line Tools]
+
+-Make sure that you are having Win8x version[any linux, mac etc..]
+
+     nodejs.org
+
+-After Installing NodeJs on your pc => open command prompt and test the commands
+     C:\> node -v  [20x]
+     C:\> npm -v   [10x]
+
+b)Download and install VS Code[Visual Studio Code] ediotr
+     -Editor provides and IDE[Integrated Development Environment]
+     -Developers can use the IDE to build,debug,test and deploy.
+
+c)Installing following extensions for Visual Studio Code
+
+     -Live Server
+     -vscode-icons
+     -IntelliSense for CSS class name in HTML
+
+
+
+
+
+
+
+
+Day-4 Class
+-----------
+          Creating New Web Application
+          ----------------------------
+
+*Virtual Path: 'http://localhsot:5050'
+*Physical Path: 'D:\java_project'
+
+
+FAQ: What is Web Server
+Ans: -it resembles both hardware and software.
+     -it satisfies the client request by sending and receiving data.
+     -it follows the rules of "http" [Hyper Text Transfer Protocol]
+     -it have a virtual path referred with IP address or virtual name
+
+               http://127.0.0.1
+                    or
+               http://localhsot
+
+     -All web application are hosted on server
+     -Every application have a port number [eg:5500]
+          http://127.0.0.1:5500         =>Web Application
+          http://127.0.0.3000           =>React Application
+
+Note:Port number can be customized.
+
+
+FAQ: What is Website?
+Ans: -it is virtual directory on web server, that provides access to resources on server
+      [website is collections web pages]
+     -The resources for website are provided from a physical path.
+
+          D:\project               =>Physical path
+
+          http://127.0.0.1:5000    =>Virtual Path
+
+
+-Website comprises all static resources.
+
+FAQ: What is Web Application
+Ans: -it is a virtual directory on server, but comprises of both static and dynamic
+      resources
+     -Dynamic resources can customized the response according to the client request
+     
+
+FAQ: What is URL?
+Ans: -it is virtual path used to access the resources from the web server
+     -Uniform Resources Locator
+     
+FAQ: What is Protocol?
+Ans: http is protocol it defines rules of communication in a network.
+
+          HTTP           Rules for WebSite, Web Application
+          SMTP           Rules for email servers
+          MSMQ           Rules for SMS 
+          FTP            Rules for fire transfer in internet.
+          etc..
+
+What is Project Environment?
+-Every project is built and maintained on 4 servers
+     a)Sandbox [Golden]
+     b)Development
+     c)Quality
+     d)Production
+
+-Sandbox is repository server that comprises of all resources required for project
+-Development Environment is the location for building an application
+-Quality Environment is the location for testing application
+-Production Environment is the location for deploying application.[Go Live]
+
+
+
+               Creating a Project in Development Environment
+          ------------------------------------------------------
+1.Create a physical path for your project, that refers to drive directory on your pc
+     D:\online-shopping
+2.Open project in Visual Studio Code
+
+3.Open Terminal VS Code [Ctrl+`] 
+
+4.Change the Terminal from "Power shell to command prompt"
+
+5.Run the Command
+     >npm init -y
+
+     -it generates a new file called package.josn add into project
+
+     Package Manage [npm,yarn,bower,rubyGems,composer etc..]
+
+
+FAQ: What is Package Manager
+Ans: It is a software tool used by developers to install,update,uninstall any library
+     required for project [npm,yarn,bower,rubyGems,composer etc..]
+
+FAQ: What is package.json
+Ans: it comprises of project "Meta Data", which is information about project
+     -it comprises of details
+          a)Project Name
+          b)Project Version
+          c)Commands to run, build, test
+          d)Dependencies [Library used in project] etc..
+
+JSON [JavaScript Object Notation]
+
+6.Add a new file into your project "README.md" it is a help document designed by developers
+  for developers
+
+7.Add following folder into project
+
+     a)public
+     b)src
+
+     -public folder comprises of all static resources
+          a)HTML pages
+          b)images
+          c)Videos
+          d)Document [PDF,DOCS,XSLX,PPT]
+          etc..
+     -src folder comprises of all dynamic resources
+          a)css files
+          b)sass files
+          c)js files
+          d)ts files
+
+
+
+
+
+
+
+
+Day-5 Class 
+-----------
+
+				Web Page
+			  ------------
+-Web page is a hyper text document that provides an UI for  
+ interacting with recources in a web Application.
+
+FAQ: What is meaning of hyper ?
+Ans: Hyper Means 'beyond'[it show you more informiaton,also contains more info]
+     Webpage is a hyper text document
+	*Hyper text referce to the text that comprises of detialied content
+	 beyond what it can display.
+
+
+
+Web page are classified into 2 types
+------------------------------------
+a)Static Page.[continues memory]
+b)Dynamic Page.[discrit memory]
+
+Static Page
+-----------
+-it comprises of information, which is same across multiple requests.
+ it have extenstion ".html, .htm".
+ 
+
+Dynamic Page
+------------
+-it customizes content according to the client request.
+ it have extenstion ".asp, .aspx, .jsp, .php etc.."
+ 
+
+HTML: is a language used to design both static and dynamic pages.
+	  it supports dyncamic and statck pages.
+	  
+
+*Every web applications starts with a static page "index.html"
+
+-Go to your project root folder
+"online-shopping" add a new file "index.html".
+	
+index.html
+----------
+Welcome To ONline Shopping
+
+>Go Live
+
+					HTML
+				-----------
+-HTML is "Hyper Text Markup Language".
+-"Hyper Text" refers to the term "Beyond"
+-"Markup" refers to the term "Marking Up", which is the process of 
+  presenting content excatly as required.
+-Markup Langugage is apresentation language.
+-It is used to create presentation for web browser
+
+
+.html
+-----
+<div align="center">
+    Online Shopping<br>
+    (Festival Offers)
+</div>
+
+
+
+Evolution of HTML:
+------------------
+-Internet started with a browser called "Mosaic".
+-CERN (Council for European Research and Nuclear) labs 
+ developed a language called "GML" Generic Makup Language For Mosaic.
+-CERN developed a superset for GML called "SGML"[Stand GML]
+-"Timb Berners Lee" developed the concepet of "Web" a 
+  a new language for web called "HTML".
+-HTML first version was introduced in early 1990's by "Tim Berners Lee".
+-IETF [Internet Engineering Task Force] Developed HTML upto version 3.1 
+-WHATWG [Web HyperText Application Technology Work Group] Started evolving and
+ Mantaining HTML since 2004
+
+whatwg.org			    
+mdn.com[Bredan Eich]    
+https://developer.mozilla.org/en-US/
+
+-The Latest HTML version is "HTML-5" [2014]
+-The previous HTML version from WHATWG is HTML-4 [2004]
+
+
+
+					HTML - 5
+				---------------
+
+
+ 
+
+
+
+
+
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+     
+
