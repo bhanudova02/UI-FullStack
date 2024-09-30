@@ -257,13 +257,13 @@ Day-5 Class
 
 				Web Page
 			  ------------
--Web page is a hyper text document that provides an UI for  
- interacting with recources in a web Application.
+     -Web page is a hyper text document that provides an UI for  
+     interacting with resources in a web Application.
 
 FAQ: What is meaning of hyper ?
-Ans: Hyper Means 'beyond'[it show you more informiaton,also contains more info]
+Ans: Hyper Means 'beyond'[it show you more information,also contains more info]
      Webpage is a hyper text document
-	*Hyper text referce to the text that comprises of detialied content
+	*Hyper text refers to the text that comprises of detailed content
 	 beyond what it can display.
 
 
@@ -271,7 +271,7 @@ Ans: Hyper Means 'beyond'[it show you more informiaton,also contains more info]
 Web page are classified into 2 types
 ------------------------------------
 a)Static Page.[continues memory]
-b)Dynamic Page.[discrit memory]
+b)Dynamic Page.[discrete memory]
 
 Static Page
 -----------

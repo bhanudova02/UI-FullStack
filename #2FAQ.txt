@@ -1,0 +1,184 @@
+FAQ: What is UX/UI ?
+Ans: UX is user experience prepare the plain
+     UI is user interface build according to plain
+
+
+FAQ: What is Computer Network?
+Ans: Computer network is nothing but group of computers
+     connecting with each other wired or wifi for sharing information or resources
+
+
+
+FAQ: What are various type of network?
+Ans: Lan [Local Area Network]
+     Man [Metropolitan Area Network]
+     Wan [Wide Area Network]
+
+
+FAQ: What is Internet?
+Ans: Internet Is a wide area network that connects a computers all over the world
+
+
+FAQ: What are the Web Principles and Standards?
+Ans: -Accessibility
+     -Internationalization
+     -Security
+     -Privacy
+     if does't have match above web principles on website will be rejected
+
+
+FAQ: What is the current Web Version?
+Ans: The Current Web Version Is Web3
+
+
+FAQ: What is WebComponent & Services?
+Ans: -Websites
+     -Web Application
+     -Blogs
+     -Micro Blogs [a short blog post designed for quick and typically direct audience interactions]
+     -Podcasting [pod multimedia]
+     -Wiki etc..
+
+
+
+FAQ: What is The WebApplication Architecture?
+Ans: WebApplication Architecture Comprises of 3tires and 3layers
+        *Application run in  3 tires
+            a)Database Tire
+            b)Application Tire
+            c)Presentation Tire
+
+        *Application build in 3 layers
+            a)Database Layer
+            b)Application Layer | Business Layer
+            c)UI Layer
+    -FrontEnd
+        i)UI Layer
+    -BackEnd
+        i)Application Layer
+        ii)Database Layer
+
+
+
+FAQ: What is NodeJs?
+Ans: NodeJs is a open-source, cross-platform javascript runtime, used by developers 
+     to build 
+        -Web Application
+        -Services
+        -Scripts
+        -CLI Tools [Command Line Tools]
+    [If you want to install Node.js on your Windows machine, you must have at least Windows 8.x version.]
+
+
+
+
+
+FAQ: What is Virtual Path & Physical Path?
+Ans: Virtual Path:  http://locahost:5050
+     Physical Path: D:\java_project
+
+
+
+FAQ: What is Web Server?
+Ans: -It resembles both 'Hardware & Software'
+     -It Satisfies The Client Request by sending and receiving the data
+     -It follow the rules of 'http' [HyperText Transfer Protocol]
+     -It have virtual path referred wit IP address or Virtual name
+     -All Web Application Hosted on Server
+     -Every Application Have PortNumber[eg:5500]
+        http://127.0.0.1:5500         =>Web Application
+        http://127.0.0.3000           =>React Application
+     -PortNumber Can Be Customized
+
+
+FAQ: What is Web?
+Ans: *internet is network with no limits anybody can access information anywhere
+     -Web is a portion/part of internet with restricted access/
+     -The latest version of Web is 'Web3'
+
+
+FAQ: What is Website?
+Ans: It is a virtual directory on web server, that provided access to resources on server
+     [Website is a collections of web pages]
+
+        D:\project                  =>Physical Path
+        http://127.0.0.1:5000       =>Virtual Path
+     
+     WebSite Compress of all static resources
+
+
+FAQ: What is WebApplication?
+Ans: -It is a virtual directory on server, but compress both static and dynamic resources
+     -Dynamics resources can customized the response according to the client request
+     
+    
+FAQ: What is URL?
+Ans: it is virtual path used to access the resources from web server
+     -Uniform Resources Locator
+
+FAQ: What is Protocol?
+Ans: http is protocol it defines rules of communication in a network
+          HTTP           Rules for WebSite, Web Application
+          SMTP           Rules for email servers
+          MSMQ           Rules for SMS 
+          FTP            Rules for fire transfer in internet.
+          etc..
+
+
+FAQ: What is Package Manager?
+Ans: It is software tool used by developers to install,update,uninstall 
+     any library required for project
+
+
+
+FAQ: What is package.json?
+Ans: -It comprises of project 'Meta Data' Which Information About Project
+     *It Comprises of details
+        -project name
+        -project version
+        -commands to run,build,test
+        -dependencies [library used in project] etc..
+
+
+FAQ: What types of files typically stored in 'public/src' folder?
+Ans: -A public folder comprises of all static resources
+        a)HTML Files
+        b)Images
+        c)Videos
+        d)Documents[Pdf,Docs,XSLX,PPT]
+    
+     -A src folder comprises of all dynamic resources
+        a)CSS files
+        b)SASS files
+        c)JS Files
+        d)TS Files
+
+FAQ: What is WebPage?
+Ans: WebPage is a hyper text document that provides an ui for 
+     interacting with resources in a WebPage
+
+FAQ: What is Meaning Of Hyper?
+Ans: Hyper Means Beyond [it show more information also contain more information]
+
+
+FAQ: How Many Types WebPage Ar Classified?
+Ans: Webpage are classified into 2 types
+        Static Page [Continues Memory]  
+            *it comprises of information, which is same across multiple request
+            *it have extension ".html, .htm"
+
+        Dynamics Page [Discrete Memory]
+            *it customized content according to client request
+            *it have extension ".asp, .aspx, .jsp, .php etc.."
+
+
+FAQ: What is HTML?
+Ans: *HTML is a hyper text markup language
+     *Hyper "Text Means" Refers to the term Beyond
+     *'Markup' refer to the term "Marking Up" Which is the process 
+       of presenting content exactly as required
+     *Markup Language is Presenting Language
+     *It is used to create presentation for web browser  
+     *Html is a language used to design both static and dynamic pages
+     *Every WebApplication starts with a static page "index.html"
+
