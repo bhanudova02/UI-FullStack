@@ -182,3 +182,123 @@ Ans: *HTML is a hyper text markup language
      *Html is a language used to design both static and dynamic pages
      *Every WebApplication starts with a static page "index.html"
 
+
+
+FAQ: What is Tokenization?
+Ans: It is the process of converting chars into tokens [elements]
+
+
+FAQ: What is DOM?
+Ans: It is a hierarchy of elements in browser.[Document Object Model]
+ 
+FAQ: What is Browser Engine?
+Ans: It translate HTML&CSS into  browser understandable format
+     [Webkit,V8,Chakra,Gecko,SpiderMonkey]
+
+
+FAQ: What is painting?
+Ans: It is the process of generating the final presentation on browser
+
+
+FAQ: How Many Types Are HTML Elements Categorized?
+Ans: Elements are categorized into various types
+          1.Normal Elements
+          2.Void Elements
+          3.RC Data Elements
+          4.Raw Text Elements
+          5.Foreign Elements
+
+Normal Elements
+---------------
+-A Normal elements can present content without using any additional attributes.
+-it starts presentation but will not stop the presentation.
+-you have to stop explicitlgy by using end token
+
+Ex: <b> </b>
+
+
+Void Elements
+-------------
+-A void element wil not return any presentation
+-void means no-return.
+-A void element doesn't required end token
+
+Ex: <img> 
+
+
+
+RC Data Elements
+----------------
+-Rich content data element
+-They can present only the content not the formats.
+-It can present only character number 
+-It can't present complex formats and content
+
+Ex: <textarea></textarea
+
+
+
+Raw Text Elements
+-----------------
+-A raw text can present any content
+-You don't need a token for presentation
+-We can present without using tokens
+
+Ex:  Offer price &#8377; 50,999 
+
+
+
+Foreign Elements
+----------------
+-These are HTML elements but can't run on every browser.
+-They need additional plugin's.
+
+Ex: SVG, Canvas, MATHML
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+FAQ: What is block level and inline element?
+Ans: -A block level element can allow any content beside, it can display only per-line
+     -Inline element can allows span content beside
+
+          <div>     :block level
+          <span>    :inline 
+
+FAQ: What is semantic elements & non-semantic element?
+Ans: -Semantic elements are the designed for specific purpose.
+     -HTMl have over all 100 semantics
+     -Normal elements are used universally any purpose
+
+     Ex: <p> <h2> <img> semantic
+         <div> <span>   non-semantic
+
+
+FAQ: What are generic and non-generic elements?
+Ans: -Generate elements have pre-defined functionality
+     -Non-generic element are without any pre-defined functionality,
+      They required custom functionality
+
+      <form>        Generic
+      <div>         Non-Generic
+
+FAQ: What is difference between ".html or .htm"
+Ans: Both are same ".htm" is extension given by various tools
+     according to  OS standards
+
+<>   Token
+<!>  Not Token
+
+
+
+     

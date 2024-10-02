@@ -341,11 +341,294 @@ https://developer.mozilla.org/en-US/
 
 
 
-					HTML - 5
-				---------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Day-6 
+------
+				Browser Architecture
+               -------------------------------
+-Browser is a software tool used by client to access and view web page.
+Popular Browsers
+     -Chrome
+     -Edge
+     -Safari
+     -FireFox etc.
+
+-The components of browser
+
+1.User Interface
+-it refers to the UI of browser, which includes various component like 
+  a)Tabs
+  b)Shortcut Buttons
+  c)Search/Address bar
+  d)Extensions 
+
+
+2.UI Backend
+ -it refers to the logic behind the UI of browser
+ -if it is an open Source browser then you can modify the UI
+
+
+3.Browser Engine
+ -it translates HTML and CSS into browser understandable format.
+ -Every Browser have its own browser engine
+     Chrome    -> V8
+     Fire Fox  -> Spider Monkey
+     Safari    -> Webkit
+     Edge      -> Chakra
+
+4.Rendering Engine[preparing the final output]
+ -it is responsible for presenting the content on browser
+ -Browser Engine translates and rendering engine presents
+ -Every browser engine maintains a rendering engine.
+ 
+5.JavaScript Interpreter
+ -interpreter is line-by-line  translator
+ -every browser have a javascript interpreter that translates javascript in browser.
+
+6.Networking
+ -it is responsible for handling the request form client
+ -it can process the request on server
+ -it gets response from server
+ -it loads the response content on browser
+ -it tracks the loading time, number of requests etc.
+
+7.Data Persistence
+ -it refers to data storage in browser 
+ -browser have various storages containers
+     a)Local Storage
+     b)Session Storage
+     c)Cookies Storage
+ 
+
+                         HTML Parsing[How Html Works In Browser]
+                    --------------------------------------------------
+Flow:
+-----
+*Developers Design Markup => Bytes => Chars => Tokens => Elements => DOM => Render => Layout => Paint
+
+
+FAQ's:
+1.What is Tokenization?
+A.It is the process of converting chars into tokens [elements]
+
+2.What is DOM?
+A.It is a hierarchy of elements in browser.[Document Object Model]
+ 
+3.What is Browser Engine?
+A.It translate HTML&CSS in browser
+  [Webkit,V8,Chakra,Gecko,SpiderMonkey]
+
+4.What is Painting?
+A.It is the process of generating the final presentation on browser
+
+
+
+                    HTML Elements
+               -----------------------
+-HTML presents any content by using "Elements".
+-Elements are categorized into various groups 
+  1.Normal Elements
+  2.Void Elements
+  3.Rc Data Elements
+  4.Raw Text Elements
+  5.Foreign Elements
+
+
+
+Normal Elements
+---------------
+-A Normal elements can present content without using any additional attributes.
+-it starts presentation but will not stop the presentation.
+-you have to stop explicitly by using end token
+
+Ex: <b> </b>
+
+
+Void Elements
+-------------
+-A void element wil not return any presentation
+-void means no-return.
+-A void element doesn't required end token
+
+Ex: <img> 
+
+
+RC Data Elements
+----------------
+-Rich content data element
+-They can present only the content not the formats.
+-It can present only character number 
+-It can't present complex formats and content
+
+Ex: <textarea></textarea>
+
+
+Raw Text Elements
+-----------------
+-A raw text can present any content
+-You don't need a token for presentation
+-We can present without using tokens
+
+Ex:  Offer price &#8377; 50,999 
+
+
+Foreign Elements
+----------------
+-These are HTML elements but can't run on every browser.
+-They need additional plugin's.
+
+Ex: SVG, Canvas, MATHML
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
  
+
+
+
+
+
+
+
+
+
+Day-7 Class
+-----------
+
+FAQ: 
+---
+1. What are block level and inline elements?
+A. -Block level will not allow any content beside, it can display only one per-line.
+   -Inline line element will allow to span contents beside.
+
+     <div>     Block Level
+     <span>    Inline    
+
+2. What are semantic elements & non-semantic elements?
+A. -Semantic elements are the elements designed for specific purpose.
+   Html have over 100 semantics.
+   -Non-Semantic elements are used universally for any purpose.
+
+ Ex: <p> <h2> <img>      semantics
+     <div> <span>        Non-Semantic
+
+
+3. What are generic and non-generic elements?
+A. -A Generic element have pre-defined functionality.
+   -Non-Generic are static without any pre-defined functionality, they required
+    Custom functionality
+
+
+<form>    Generic
+<div>     Non-Generic
+
+
+
+                    HTML Static Page Structure
+               ------------------------------------
+1.A static page must have extension ".html" or ".htm"
+
+FAQ: What is difference between ".html & .html"
+Ans: Both are same ".htm" is extension given by various tools
+     according to OS standards
+
+2.Every Static page must start with "Document Declaration".
+-Document Declaration is required to define HTML 5 version
+-It specifies that page is designed in HTML 5.
+-If document declaration is not defined then browser uses as HTML 4.
+-Document declaration is defined by using
+
+     *<> Token
+     *<!> Not Token
+
+     <!DOCTYPE html>
+
+ 
+3.Every document have a document scope which is defined by using
+  
+     <html>
+
+
+     </html>
+
+4.Every document scope must have internationalization configured.
+-Internationalization is configured by using "lang" attribute.
+-It specifies the source country, where web page is hosted or designed
+
+     <html lang="en-in">
+
+     </html>
+
+5.Every document scope comprises of 2 sections
+    a)<head>
+    b)<body>
+
+Head:
+-----
+ -Content in <head> section will save "round-trip"
+ -If a content is requested repeatedly again and again with in a short span of time,
+  then you can load in memory and access form memory
+ -Content in head section is loaded into memory and later rended in page
+
+Body:
+----
+-Content is body uses round-trip.
+-It is always requested form server.
+-It loads everyTime from server.
+
+                    Head section
+               --------------------
+<title>
+<link>
+<meta>
+<style>
+<script>
+<base>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
