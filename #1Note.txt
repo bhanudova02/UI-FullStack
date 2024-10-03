@@ -678,7 +678,271 @@ Ans: A responsive design allows the page to optimize its content according to de
           viewport       :represents the screen size
           initial-scale  :zoom % 1=100%  1.5=150%
 
+Ex:
+---
+<!DOCTYPE html> 
+<html lang="en-in">
+    <head>
+        <title>Online Shopping</title>
+       <link rel="shortcut icon" href="./public/images/favicon.ico">
+       <meta name="viewport" content="device=device-width, initial-scale=1.5">
+    </head>
+    <body>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti consectetur accusamus, asperiores odit delectus ratione. Incidunt dicta neque harum atque dolores, quam dolor a sunt in odio expedita assumenda voluptate?
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae est veritatis ratione. Dolorum assumenda numquam eum praesentium mollitia ratione autem ea corporis veniam! Laborum non qui perspiciatis nisi quibusdam architecto?
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae est veritatis ratione. Dolorum assumenda numquam eum praesentium mollitia ratione autem ea corporis veniam! Laborum non qui perspiciatis nisi quibusdam architecto?
+    </body>
+</html>
+
 Note: Download and install "Mobile Simulator" for google chrome browser.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+DAY-9 Class
+-----------
+Responsive To Device:
+<meta name="viewport" content="device=device-width, initial-scale=1.5">
+
+
+Responsive to reload:
+--------------------
+<meta http-equiv="refresh" content="5">
+
+
+SEO related meta:
+-----------------
+<meat name="keywords" content="some words that describe your site and users can find such content in your site">
+
+<meta name="description" content="something about your website - a few lines summary of services provided by your site">
+
+<meta charset="utf-8">
+     -UTF is "Unicode Transformation Format"
+     -8 is "8bits memory is required to translated"[english]
+     -16  [complex language, like chines, japanese etc..]
+     -32  [complex language, like chines, japanese etc..]
+     -62  [complex language, like chines, japanese etc..]
+
+
+4.Script & Style
+-Script is used to embed any client side or server side script into page
+-Style is used to embed CSS style into page.
+
+Syntax:
+-------
+     <script type="text/javascript"</script>
+     <style type="text/css"></style>`
+
+
+Summary
+-------
+-title
+-link
+-meta
+-style
+-script
+-base
+
+
+                    HTML Body Sections
+               ----------------------------
+-Body Section is defined by using <body> element.
+-Body element attributes
+1.bgcolor      :it sets a background color for page
+2.text         :it sets color for text in page.
+
+HTML Colors:
+------------
+-HTML colors can be defined in 3 ways
+     a)Color Name
+     b)Shade Name
+     c)Hexadecimal Code
+
+-Color Name refer to the actual name of color in lowercase.
+          <body bgcolor="red" text="white">
+
+-Color Shade name refers to contextual
+          <body bgcolor="gold" text="lightgreen">
+
+-Hexadecimal code can be 3 chars or 6 chars with "#". it is a combination of 
+ 3 basic colors "RGB"[Red-Green-Blue]
+
+          #RGB
+          #RRGGBB 
+
+          RGB = 0,1,2,4,5,6,6,7,8,9,a,b,c,d,e,f
+                        <----dark     -->bright
+
+          #0f0      Green
+          #f00      Red
+          #a00      Dark Red
+          #400      More dark Red
+          #00ff00   Green
+
+Ex:
+--
+<!DOCTYPE html> 
+<html lang="en-in">
+    <head>
+        <title>Online Shopping</title>
+       <link rel="shortcut icon" href="./public/images/favicon.ico">
+       <meta name="viewport" content="device=device-width, initial-scale=1.5">
+    </head>
+    <body bgcolor="#a5 0000" text="white">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque, amet maiores praesentium repellat pariatur commodi molestias laudantium eligendi dignissimos. Similique repudiandae laudantium sapiente assumenda dolores facilis repellat tenetur nihil odio?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed facilis, saepe aliquid magni deleniti pariatur ullam vero aut iusto consequatur veniam expedita! Placeat illo minima iusto porro, ducimus rem cupiditate?
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora quod, culpa qui ipsa aspernatur fugit corrupti quis natus minima ipsum. Fugit adipisci voluptatibus velit incidunt sapiente perspiciatis quia hic unde.
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam reiciendis recusandae quo odio officiis eveniet? Doloremque at aspernatur, cumque voluptatem, magnam sed, ullam aut laborum eveniet eum quia vitae. Tempore.
+    </body>
+</html>
+
+
+
+3. background       :it sets a background image for page.
+                     Background can be controlled only with CSS.
+
+
+
+CSS Bacground Style:
+--------------------
+     bacground-size
+     background-repeat
+     background-attachment
+     background-position
+
+-Style are defined in HTML page by uisng <style> conatiner
+
+Syntax:
+-------
+     <head>
+          <style>
+               body{
+                    background-size:[width & height, contain, cover];
+                    background-attachment:[scroll,fixed];
+                    background-repeat:[repeat,no-repeat,repeat-x,repeat-y];
+                    background-position:[top,center,right,bottom, pixels]
+               }
+          </style>
+     </head>
+
+
+
+
+Ex:
+---
+<!DOCTYPE html> 
+<html lang="en-in">
+    <head>
+        <title>Online Shopping</title>
+       <link rel="shortcut icon" href="./public/images/favicon.ico">
+       <meta name="viewport" content="device=device-width, initial-scale=1.5">
+       <style>
+            body{
+                /* background-size: 400px 400px; */
+                /* background-size: cover; */
+                /* background-size: 1200px 500px; */
+                /* background-size: 100% 100%; */
+                background-size: 200px 200px; 
+                background-attachment: fixed;
+                background-repeat:no-repeat ;
+                /* background-position: center; */
+                /* background-position: top center; */
+                /* background-position: 100px 100px; */
+                background-position: center center;
+            }
+       </style>
+    </head>
+    <body background="./public/images/women-shop.jpg">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora quod, culpa qui ipsa aspernatur fugit corrupti quis natus minima ipsum. Fugit adipisci voluptatibus velit incidunt sapiente perspiciatis quia hic unde.
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora quod, culpa qui ipsa aspernatur fugit corrupti quis natus minima ipsum. Fugit adipisci voluptatibus velit incidunt sapiente perspiciatis quia hic unde.
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora quod, culpa qui ipsa aspernatur fugit corrupti quis natus minima ipsum. Fugit adipisci voluptatibus velit incidunt sapiente perspiciatis quia hic unde.
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora quod, culpa qui ipsa aspernatur fugit corrupti quis natus minima ipsum. Fugit adipisci voluptatibus velit incidunt sapiente perspiciatis quia hic unde.
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora quod, culpa qui ipsa aspernatur fugit corrupti quis natus minima ipsum. Fugit adipisci voluptatibus velit incidunt sapiente perspiciatis quia hic unde.
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora quod, culpa qui ipsa aspernatur fugit corrupti quis natus minima ipsum. Fugit adipisci voluptatibus velit incidunt sapiente perspiciatis quia hic unde.
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora quod, culpa qui ipsa aspernatur fugit corrupti quis natus minima ipsum. Fugit adipisci voluptatibus velit incidunt sapiente perspiciatis quia hic unde.
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora quod, culpa qui ipsa aspernatur fugit corrupti quis natus minima ipsum. Fugit adipisci voluptatibus velit incidunt sapiente perspiciatis quia hic unde.
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora quod, culpa qui ipsa aspernatur fugit corrupti quis natus minima ipsum. Fugit adipisci voluptatibus velit incidunt sapiente perspiciatis quia hic unde.
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora quod, culpa qui ipsa aspernatur fugit corrupti quis natus minima ipsum. Fugit adipisci voluptatibus velit incidunt sapiente perspiciatis quia hic unde.
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora quod, culpa qui ipsa aspernatur fugit corrupti quis natus minima ipsum. Fugit adipisci voluptatibus velit incidunt sapiente perspiciatis quia hic unde.
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora quod, culpa qui ipsa aspernatur fugit corrupti quis natus minima ipsum. Fugit adipisci voluptatibus velit incidunt sapiente perspiciatis quia hic unde.
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora quod, culpa qui ipsa aspernatur fugit corrupti quis natus minima ipsum. Fugit adipisci voluptatibus velit incidunt sapiente perspiciatis quia hic unde.
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora quod, culpa qui ipsa aspernatur fugit corrupti quis natus minima ipsum. Fugit adipisci voluptatibus velit incidunt sapiente perspiciatis quia hic unde.
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora quod, culpa qui ipsa aspernatur fugit corrupti quis natus minima ipsum. Fugit adipisci voluptatibus velit incidunt sapiente perspiciatis quia hic unde.
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora quod, culpa qui ipsa aspernatur fugit corrupti quis natus minima ipsum. Fugit adipisci voluptatibus velit incidunt sapiente perspiciatis quia hic unde.
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora quod, culpa qui ipsa aspernatur fugit corrupti quis natus minima ipsum. Fugit adipisci voluptatibus velit incidunt sapiente perspiciatis quia hic unde.
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora quod, culpa qui ipsa aspernatur fugit corrupti quis natus minima ipsum. Fugit adipisci voluptatibus velit incidunt sapiente perspiciatis quia hic unde.
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora quod, culpa qui ipsa aspernatur fugit corrupti quis natus minima ipsum. Fugit adipisci voluptatibus velit incidunt sapiente perspiciatis quia hic unde.
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora quod, culpa qui ipsa aspernatur fugit corrupti quis natus minima ipsum. Fugit adipisci voluptatibus velit incidunt sapiente perspiciatis quia hic unde.
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora quod, culpa qui ipsa aspernatur fugit corrupti quis natus minima ipsum. Fugit adipisci voluptatibus velit incidunt sapiente perspiciatis quia hic unde.
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora quod, culpa qui ipsa aspernatur fugit corrupti quis natus minima ipsum. Fugit adipisci voluptatibus velit incidunt sapiente perspiciatis quia hic unde.
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora quod, culpa qui ipsa aspernatur fugit corrupti quis natus minima ipsum. Fugit adipisci voluptatibus velit incidunt sapiente perspiciatis quia hic unde.
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora quod, culpa qui ipsa aspernatur fugit corrupti quis natus minima ipsum. Fugit adipisci voluptatibus velit incidunt sapiente perspiciatis quia hic unde.
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora quod, culpa qui ipsa aspernatur fugit corrupti quis natus minima ipsum. Fugit adipisci voluptatibus velit incidunt sapiente perspiciatis quia hic unde.
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora quod, culpa qui ipsa aspernatur fugit corrupti quis natus minima ipsum. Fugit adipisci voluptatibus velit incidunt sapiente perspiciatis quia hic unde.
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora quod, culpa qui ipsa aspernatur fugit corrupti quis natus minima ipsum. Fugit adipisci voluptatibus velit incidunt sapiente perspiciatis quia hic unde.
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora quod, culpa qui ipsa aspernatur fugit corrupti quis natus minima ipsum. Fugit adipisci voluptatibus velit incidunt sapiente perspiciatis quia hic unde.
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora quod, culpa qui ipsa aspernatur fugit corrupti quis natus minima ipsum. Fugit adipisci voluptatibus velit incidunt sapiente perspiciatis quia hic unde.
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora quod, culpa qui ipsa aspernatur fugit corrupti quis natus minima ipsum. Fugit adipisci voluptatibus velit incidunt sapiente perspiciatis quia hic unde.
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora quod, culpa qui ipsa aspernatur fugit corrupti quis natus minima ipsum. Fugit adipisci voluptatibus velit incidunt sapiente perspiciatis quia hic unde.
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora quod, culpa qui ipsa aspernatur fugit corrupti quis natus minima ipsum. Fugit adipisci voluptatibus velit incidunt sapiente perspiciatis quia hic unde.
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora quod, culpa qui ipsa aspernatur fugit corrupti quis natus minima ipsum. Fugit adipisci voluptatibus velit incidunt sapiente perspiciatis quia hic unde.
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora quod, culpa qui ipsa aspernatur fugit corrupti quis natus minima ipsum. Fugit adipisci voluptatibus velit incidunt sapiente perspiciatis quia hic unde.
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora quod, culpa qui ipsa aspernatur fugit corrupti quis natus minima ipsum. Fugit adipisci voluptatibus velit incidunt sapiente perspiciatis quia hic unde.
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora quod, culpa qui ipsa aspernatur fugit corrupti quis natus minima ipsum. Fugit adipisci voluptatibus velit incidunt sapiente perspiciatis quia hic unde.
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora quod, culpa qui ipsa aspernatur fugit corrupti quis natus minima ipsum. Fugit adipisci voluptatibus velit incidunt sapiente perspiciatis quia hic unde.
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora quod, culpa qui ipsa aspernatur fugit corrupti quis natus minima ipsum. Fugit adipisci voluptatibus velit incidunt sapiente perspiciatis quia hic unde.
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora quod, culpa qui ipsa aspernatur fugit corrupti quis natus minima ipsum. Fugit adipisci voluptatibus velit incidunt sapiente perspiciatis quia hic unde.
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora quod, culpa qui ipsa aspernatur fugit corrupti quis natus minima ipsum. Fugit adipisci voluptatibus velit incidunt sapiente perspiciatis quia hic unde.
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora quod, culpa qui ipsa aspernatur fugit corrupti quis natus minima ipsum. Fugit adipisci voluptatibus velit incidunt sapiente perspiciatis quia hic unde.
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora quod, culpa qui ipsa aspernatur fugit corrupti quis natus minima ipsum. Fugit adipisci voluptatibus velit incidunt sapiente perspiciatis quia hic unde.
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora quod, culpa qui ipsa aspernatur fugit corrupti quis natus minima ipsum. Fugit adipisci voluptatibus velit incidunt sapiente perspiciatis quia hic unde.
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora quod, culpa qui ipsa aspernatur fugit corrupti quis natus minima ipsum. Fugit adipisci voluptatibus velit incidunt sapiente perspiciatis quia hic unde.
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora quod, culpa qui ipsa aspernatur fugit corrupti quis natus minima ipsum. Fugit adipisci voluptatibus velit incidunt sapiente perspiciatis quia hic unde.
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam reiciendis recusandae quo odio officiis eveniet? Doloremque at aspernatur, cumque voluptatem, magnam sed, ullam aut laborum eveniet eum quia vitae. Tempore.
+    </body>
+</html>
+
+
+
+
+
+
+
+
+4.align
+5.alink
+6.vlink
+7.leftmargin
+8.rightmargin
+9.topmargin
+10.bottommargin
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
