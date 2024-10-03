@@ -624,6 +624,63 @@ Body:
 
 
 
+DAY-8 Class
+-----------
+
+                    Components in Head Section
+               ------------------------------------
+1.<title>
+-it is used to display title in browser title bar.
+-it sets a title for page.
+-it is used to bookmark the page.
+-it is used in SEO. [Search Engine Optimization]
+
+Syntax:
+     <!DOCTYPE html>
+     <html lang="en-ing">
+          <head>
+               <title>ONline Shopping</title>
+          </head>
+     </html>
+
+
+2.<link>
+-it can link external documents to a webpage.
+-External document can be a style sheet, favicon etc..
+
+Ex: Linking favicon
+-------------------
+1.Open ms-paint on your PC
+2.Goto file => properties => Set Page size 16 X 16px (max 32px) [width height];
+3.Draw your image save into project folder 
+     D:online-shopping\public\images\favicon.preparing
+4.Open image in VS code and rename to "favicon.ico"
+5.Link to your HTML page
+
+<head>
+     <link rel="shortcut icon" href="./public/images/favicon.ico">
+</head>
+
+
+3.<meta>
+-it refers to "meta-data".
+-it is information about page given to browser or SEO[Search Engine Optimization]
+-it comprises of information which is used to make the page 
+     a)Responsive
+     b)SEO Friendly
+
+FAQ: What is responsive?
+Ans: A responsive design allows the page to optimize its content according to device and   
+     screen.
+
+          <meta name="viewport" content="width device-width, initial-scale=1">
+
+          viewport       :represents the screen size
+          initial-scale  :zoom % 1=100%  1.5=150%
+
+Note: Download and install "Mobile Simulator" for google chrome browser.
+
+
 
 
 

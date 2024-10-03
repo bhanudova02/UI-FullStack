@@ -301,4 +301,30 @@ Ans: Both are same ".htm" is extension given by various tools
 
 
 
+
+FAQ: What is Responsive?
+Ans: A responsive design allows the page to optimize its content
+     according to device and screen
+          <meat name="viewport" content"width device-width, initial-scale=1">
+
+          viewport            :response the screen size
+          initial-scale       :zoom % 1=100% 1.5=150%
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
      
