@@ -952,6 +952,496 @@ Ex:
 
 
 
+DAY-10 Class
+-------------
+1.bgcolor
+2.text
+3.background
+4.align        :it aligns the page content left,center,right or justify.
+                    Syntax:
+                    -------
+                    <body align="justiy">
+
+Ex:
+---
+<!DOCTYPE html> 
+<html lang="en-in">
+    <head>
+        <title>Online Shopping</title>
+       <link rel="shortcut icon" href="./public/images/favicon.ico">
+       <meta name="viewport" content="device=device-width, initial-scale=1.5">
+       <style>
+           
+       </style>
+    </head>
+    <body align="justify">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora quod, culpa qui ipsa aspernatur fugit corrupti quis natus minima ipsum. Fugit adipisci voluptatibus velit incidunt sapiente perspiciatis quia hic unde.
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora quod, culpa qui ipsa aspernatur fugit corrupti quis natus minima ipsum. Fugit adipisci voluptatibus velit incidunt sapiente perspiciatis quia hic unde.
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora quod, culpa qui ipsa aspernatur fugit corrupti quis natus minima ipsum. Fugit adipisci voluptatibus velit incidunt sapiente perspiciatis quia hic unde.
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora quod, culpa qui ipsa aspernatur fugit corrupti quis natus minima ipsum. Fugit adipisci voluptatibus velit incidunt sapiente perspiciatis quia hic unde.
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora quod, culpa qui ipsa aspernatur fugit corrupti quis natus minima ipsum. Fugit adipisci voluptatibus velit incidunt sapiente perspiciatis quia hic unde.
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora quod, culpa qui ipsa aspernatur fugit corrupti quis natus minima ipsum. Fugit adipisci voluptatibus velit incidunt sapiente perspiciatis quia hic unde.
+    </body>
+</html>
+
+
+
+
+5.alink        :it sets color for active links in page.
+6.vlink        :it sets color for visited links in page.
+
+
+Syntax:
+-------
+<body vlink="green" alink="grd">
+     <a href="http://www.amazon.in">Amamzon</a>
+</body>
+
+Ex:
+---
+<!DOCTYPE html> 
+<html lang="en-in">
+    <head>
+        <title>Online Shopping</title>
+       <link rel="shortcut icon" href="./public/images/favicon.ico">
+       <meta name="viewport" content="device=device-width, initial-scale=1.5">
+       <style>
+           
+       </style>
+    </head>
+    <body align="justify" vlink="green" alink="red">
+            <a href="http://www.amazon.in">Amazon</a> |
+            <a href="http://www.microsoft.com">MicroSoft</a>
+    </body>
+</html>
+
+
+
+
+
+
+7.leftmargin             ]
+8.rightmargin            ]    -margin sets space between the content and page
+9.topmargin              ]    -if content have border then it is the space between 
+10.bottommargin          ]     page & border
+
+
+Syntax:
+-------
+<body leftmargin="50" rightmargin="50" topmargin="20" bottommargin="20">
+     ..your content...
+</body>
+
+Example:
+--------
+<!DOCTYPE html> 
+<html lang="en-in">
+    <head>
+        <title>Online Shopping</title>
+       <link rel="shortcut icon" href="./public/images/favicon.ico">
+       <meta name="viewport" content="device=device-width, initial-scale=1.5">
+       <style>
+           
+       </style>
+    </head>
+    <body align="justify" leftmargin="100" rightmargin="100" topmargin="50" bottommargin="20">
+           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem magnam, deleniti, maiores dolorum autem blanditiis minus quis excepturi ea alias modi, tempore eaque? Voluptatibus iure delectus libero quia doloribus quis corrupti soluta, cupiditate ducimus atque? Pariatur eum, reprehenderit earum dicta nobis hic ullam, in voluptatem mollitia ut eaque quidem beatae consequuntur nemo eveniet corporis perspiciatis architecto recusandae delectus blanditiis dolores. Fugiat, quaerat. Asperiores itaque debitis laboriosam, inventore quas eos voluptates? Reiciendis impedit quam ratione soluta eligendi voluptatum quia nesciunt! Error ipsam aperiam molestiae culpa alias eligendi blanditiis, dolore nulla! Expedita amet enim aperiam repellat cum error hic soluta quam consequatur.
+           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem magnam, deleniti, maiores dolorum autem blanditiis minus quis excepturi ea alias modi, tempore eaque? Voluptatibus iure delectus libero quia doloribus quis corrupti soluta, cupiditate ducimus atque? Pariatur eum, reprehenderit earum dicta nobis hic ullam, in voluptatem mollitia ut eaque quidem beatae consequuntur nemo eveniet corporis perspiciatis architecto recusandae delectus blanditiis dolores. Fugiat, quaerat. Asperiores itaque debitis laboriosam, inventore quas eos voluptates? Reiciendis impedit quam ratione soluta eligendi voluptatum quia nesciunt! Error ipsam aperiam molestiae culpa alias eligendi blanditiis, dolore nulla! Expedita amet enim aperiam repellat cum error hic soluta quam consequatur.
+           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem magnam, deleniti, maiores dolorum autem blanditiis minus quis excepturi ea alias modi, tempore eaque? Voluptatibus iure delectus libero quia doloribus quis corrupti soluta, cupiditate ducimus atque? Pariatur eum, reprehenderit earum dicta nobis hic ullam, in voluptatem mollitia ut eaque quidem beatae consequuntur nemo eveniet corporis perspiciatis architecto recusandae delectus blanditiis dolores. Fugiat, quaerat. Asperiores itaque debitis laboriosam, inventore quas eos voluptates? Reiciendis impedit quam ratione soluta eligendi voluptatum quia nesciunt! Error ipsam aperiam molestiae culpa alias eligendi blanditiis, dolore nulla! Expedita amet enim aperiam repellat cum error hic soluta quam consequatur.
+           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem magnam, deleniti, maiores dolorum autem blanditiis minus quis excepturi ea alias modi, tempore eaque? Voluptatibus iure delectus libero quia doloribus quis corrupti soluta, cupiditate ducimus atque? Pariatur eum, reprehenderit earum dicta nobis hic ullam, in voluptatem mollitia ut eaque quidem beatae consequuntur nemo eveniet corporis perspiciatis architecto recusandae delectus blanditiis dolores. Fugiat, quaerat. Asperiores itaque debitis laboriosam, inventore quas eos voluptates? Reiciendis impedit quam ratione soluta eligendi voluptatum quia nesciunt! Error ipsam aperiam molestiae culpa alias eligendi blanditiis, dolore nulla! Expedita amet enim aperiam repellat cum error hic soluta quam consequatur.
+           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem magnam, deleniti, maiores dolorum autem blanditiis minus quis excepturi ea alias modi, tempore eaque? Voluptatibus iure delectus libero quia doloribus quis corrupti soluta, cupiditate ducimus atque? Pariatur eum, reprehenderit earum dicta nobis hic ullam, in voluptatem mollitia ut eaque quidem beatae consequuntur nemo eveniet corporis perspiciatis architecto recusandae delectus blanditiis dolores. Fugiat, quaerat. Asperiores itaque debitis laboriosam, inventore quas eos voluptates? Reiciendis impedit quam ratione soluta eligendi voluptatum quia nesciunt! Error ipsam aperiam molestiae culpa alias eligendi blanditiis, dolore nulla! Expedita amet enim aperiam repellat cum error hic soluta quam consequatur.
+           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem magnam, deleniti, maiores dolorum autem blanditiis minus quis excepturi ea alias modi, tempore eaque? Voluptatibus iure delectus libero quia doloribus quis corrupti soluta, cupiditate ducimus atque? Pariatur eum, reprehenderit earum dicta nobis hic ullam, in voluptatem mollitia ut eaque quidem beatae consequuntur nemo eveniet corporis perspiciatis architecto recusandae delectus blanditiis dolores. Fugiat, quaerat. Asperiores itaque debitis laboriosam, inventore quas eos voluptates? Reiciendis impedit quam ratione soluta eligendi voluptatum quia nesciunt! Error ipsam aperiam molestiae culpa alias eligendi blanditiis, dolore nulla! Expedita amet enim aperiam repellat cum error hic soluta quam consequatur.
+           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem magnam, deleniti, maiores dolorum autem blanditiis minus quis excepturi ea alias modi, tempore eaque? Voluptatibus iure delectus libero quia doloribus quis corrupti soluta, cupiditate ducimus atque? Pariatur eum, reprehenderit earum dicta nobis hic ullam, in voluptatem mollitia ut eaque quidem beatae consequuntur nemo eveniet corporis perspiciatis architecto recusandae delectus blanditiis dolores. Fugiat, quaerat. Asperiores itaque debitis laboriosam, inventore quas eos voluptates? Reiciendis impedit quam ratione soluta eligendi voluptatum quia nesciunt! Error ipsam aperiam molestiae culpa alias eligendi blanditiis, dolore nulla! Expedita amet enim aperiam repellat cum error hic soluta quam consequatur.
+           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem magnam, deleniti, maiores dolorum autem blanditiis minus quis excepturi ea alias modi, tempore eaque? Voluptatibus iure delectus libero quia doloribus quis corrupti soluta, cupiditate ducimus atque? Pariatur eum, reprehenderit earum dicta nobis hic ullam, in voluptatem mollitia ut eaque quidem beatae consequuntur nemo eveniet corporis perspiciatis architecto recusandae delectus blanditiis dolores. Fugiat, quaerat. Asperiores itaque debitis laboriosam, inventore quas eos voluptates? Reiciendis impedit quam ratione soluta eligendi voluptatum quia nesciunt! Error ipsam aperiam molestiae culpa alias eligendi blanditiis, dolore nulla! Expedita amet enim aperiam repellat cum error hic soluta quam consequatur.
+           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem magnam, deleniti, maiores dolorum autem blanditiis minus quis excepturi ea alias modi, tempore eaque? Voluptatibus iure delectus libero quia doloribus quis corrupti soluta, cupiditate ducimus atque? Pariatur eum, reprehenderit earum dicta nobis hic ullam, in voluptatem mollitia ut eaque quidem beatae consequuntur nemo eveniet corporis perspiciatis architecto recusandae delectus blanditiis dolores. Fugiat, quaerat. Asperiores itaque debitis laboriosam, inventore quas eos voluptates? Reiciendis impedit quam ratione soluta eligendi voluptatum quia nesciunt! Error ipsam aperiam molestiae culpa alias eligendi blanditiis, dolore nulla! Expedita amet enim aperiam repellat cum error hic soluta quam consequatur.
+           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem magnam, deleniti, maiores dolorum autem blanditiis minus quis excepturi ea alias modi, tempore eaque? Voluptatibus iure delectus libero quia doloribus quis corrupti soluta, cupiditate ducimus atque? Pariatur eum, reprehenderit earum dicta nobis hic ullam, in voluptatem mollitia ut eaque quidem beatae consequuntur nemo eveniet corporis perspiciatis architecto recusandae delectus blanditiis dolores. Fugiat, quaerat. Asperiores itaque debitis laboriosam, inventore quas eos voluptates? Reiciendis impedit quam ratione soluta eligendi voluptatum quia nesciunt! Error ipsam aperiam molestiae culpa alias eligendi blanditiis, dolore nulla! Expedita amet enim aperiam repellat cum error hic soluta quam consequatur.
+    </body>
+</html>
+
+
+
+
+
+
+                    Body Layout Design
+               ----------------------------
+-HTML uses "tables" for designing a layout, it is a common process upto version 4.
+-Table content is not SEO friendly and can't load content in a sequential order.
+-Hence HTML-5 introduced some new semantic & non-sematic elements for designing 
+ body layout.
+-These new elements will make page content SEO friendly and user friendly.
+
+Non-Sematic Elements
+--------------------
+1.<div>        :it is a division for content is page. it keeps all realtive content together
+2.<span>       :it is a division for inline content which spans along with existing.
+
+
+CSS Borders:
+------------
+     {
+          border:size style color;
+     }
+
+     size      :in pixels
+     style     :double, dotted solid, dashed, groove etc.
+     color     :color name, shade, hexa etc..
+
+
+CSS Margin & Padding
+--------------------
+     {
+          margin: all directions;
+          margin-left:pixels;
+          margin-right:pixels;         => similar for padding
+          margin-top:pixels;
+          margin-bottom:'pixels
+     }
+
+
+
+Example:
+-------
+<!DOCTYPE html> 
+<html lang="en-in">
+    <head>
+        <title>Online Shopping</title>
+       <link rel="shortcut icon" href="./public/images/favicon.ico">
+       <meta name="viewport" content="device=device-width, initial-scale=1.5">
+       <style>
+            div{
+                border: 1px solid black;
+                margin: 20px;
+                padding: 10px;
+            }
+            span{
+                color:red;
+            }
+       </style>
+    </head>
+    <body>
+        <div>
+            Web Technologies
+            <div>
+                Front End
+                <div>
+                    HTML<br>
+                    It is a <span>markup</span> language
+                </div>
+                <div>
+                    CSS <br>
+                    It is used for styling.
+                </div>
+            </div>
+            <div>
+                Back End
+                <div>
+                    MongoDB <br>
+                    It is a database
+                </div>
+                <div>
+                    ExpressJs<br>
+                    It is middleware
+                </div>
+            </div>
+        </div>      
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+Semantic Elements for Layout Designing
+--------------------------------------
+1.<head>
+2.<footer>
+3.<section>
+4.<main>
+5.<aside>
+6.<article>
+7.<dialog>
+8.<figure>
+9.<figcaption>
+10.<nav>
+11.<address>
+
+Web Site Template Designs
+1.https://themes.getbootstrap.com/
+2.https://colorlib.com/
+
+
+Setup icons for Project:
+-----------------------
+1.Open Terminal in VS Code
+2.Run the following command
+     >npm install bootstrap-icons --save
+
+3.It will create a new folder by name "node_modules" and adds 
+  bootstrap icons into a CSS file
+          
+    "node_modules/bootstrap-icons/font/bootstrap-icons.css"
+
+
+4.Link the CSS file to your HTML page
+     
+<head>
+  <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.css">
+</head>
+
+
+5.Every icons is having a class name, which you have to apply to any 
+  container that can display text
+
+               <div class="bi bi-twitter"></div>
+               <span class="bi bi-house"></span>
+
+Example:
+--------
+<!DOCTYPE html> 
+<html lang="en-in">
+    <head>
+        <title>Online Shopping</title>
+       <link rel="shortcut icon" href="./public/images/favicon.ico">
+       <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.css">
+       <meta name="viewport" content="device=device-width, initial-scale=1.5">
+       <style>
+            div{
+                border: 1px solid black;
+                margin: 20px;
+                padding: 10px;
+            }
+            span{
+                color:red;
+            }
+       </style>
+    </head>
+    <body>
+        <div>
+           <span class="bi bi-bell-fill"></span> Please Subscribe Follow us on<span class="bi bi-twitter"></span>
+        </div>
+        <div>
+            Web Technologies
+            <div>
+                Front End
+                <div>
+                    HTML<br>
+                    It is a <span>markup</span> language
+                </div>
+                <div>
+                    CSS <br>
+                    It is used for styling.
+                </div>
+            </div>
+            <div>
+                Back End
+                <div>
+                    MongoDB <br>
+                    It is a database
+                </div>
+                <div>
+                    ExpressJs<br>
+                    It is middleware
+                </div>
+            </div>
+        </div>      
+    </body>
+</html>
+
+
+Bootstrap icons website: https://icons.getbootstrap.com/
+Reference Website: https://themes.getbootstrap.com/product/shopper/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+DAY 11 Class
+------------
+Body attributes
+Semantics for Layout Design
+Bootstrap Icons
+
+
+Setup icons using CDN [Content Delevery Netwrok]:
+-------------------------------------------------
+1.visit icons.getbootstrap.com
+2.Copy the icons "CDN" link
+3.Paste in your page <head> section.
+4.You can use the icons by accessing class name
+     
+          <div class="bi bi-twitter"></div>
+          <div class="bi bi-house"></div>
+
+
+               <header> Semantic
+          -------------------------
+-it defines the content to dispaly at top marin of page.
+-Typically hader contains
+     a)brand-title
+     b)brand-logo
+     c)nav-bar
+     d)shortcut icons
+     e)search bar etc..
+
+
+./        Access files of current folder
+../       One Lever Back
+../../    Two Level Back
+
+
+
+Emmet is a basic html structure[press ! and tab ]
+
+Note: To get the template supports in visual studio code, you have to enable "emmet".
+      -Got to settings of VS code
+      -Search for "emmet"
+      -Select the checkbox "Show Abbrevations"
+
+ To generate HTML template in HTML page just type " ! " and press tab or Enter
+
+
+          <nav> Semantic
+     ---------------------
+-it is a semantic used for navigation in page.
+-SEO can identify the navigation options only when defined in <nav> container.
+-Nav is require to browse and navigated to all services provided by application
+
+Syntax:
+-------
+<nav>
+ <span>Home</span>
+ <span>About</span>
+</nav>
+
+
+CSS Text Styles:
+----------------
+     font-family         : it refers to the font family name, which changes the
+                           character appearence
+
+     font-size           :it sets char size
+     font-weight         :it sets bold
+     font-style          :it sets italics.
+     text-align          :it aligns text left, center, right or justify
+     color               :it sets color for text
+
+
+Syntax:
+-------
+     div{
+          font-family:Arial;
+          font-weight:bold;
+          font-style:italics;
+          font-size:20px;
+          color:#f0f;
+          text-align:center;
+     }
+
+
+
+CSS Display Flex:
+-----------------
+-it keeps the elements in a container flexible.
+-it can be row or column based flex.
+-The Css attribute "display" is used to keep the content
+     {
+          display:flex;
+     }
+-You can control the "flex-direction" as row or column
+
+     {
+          display:'flex;
+          flex-direction:row;
+     }
+-You can flex by uisng the style "justify-content" as space-between, space-around, space-evently,
+ center, baseline, end.
+
+     {
+          display:'flex;
+          flex-direction:row;
+          justify-content:space-between;
+     }
+
+
+
+
+
+          <article> Semantic
+          -------------------
+-It comprises of latest trends of the business.
+-A website can show its latest trends and highlights in article area
+-It keeps the latest updates of website SEO friendly
+-
+
+
+
+
+
+     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
