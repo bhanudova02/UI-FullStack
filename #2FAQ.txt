@@ -314,6 +314,67 @@ Ans: A responsive design allows the page to optimize its content
 
 
 
+FAQ: What is Hexadecimal Color?
+Ans: Hexadecimal can be 3 character or 6 character with "#". it is 
+     combination of 3 colors "RGB" [Red-Green-Blue]
+
+     #RGB
+     #RRGGBB
+
+     RGB = 0,1,2,3,4,5,6,7,8,9,a,b,c,d,e,f
+           DARK<----            --->Bright
+
+           #ofo               :green
+           #f00               :red
+           #a00               :dark-red
+           #400               :more dark
+           #00ff00            :green
+
+
+
+Imp Theory
+----------
+background          :it sets background image for page.
+                     background can controlled only with css
+
+
+CSS Background Style
+--------------------
+background-size
+background-repeat
+background-attachment
+background-position
+
+Syntax:
+-------
+<head>
+     <style>
+          body{
+               background-size:[width,height,contain,cover]
+               background-repeat[no-repeat,repeat,repeat-x,repeat-y]
+               background-attachment:[scroll,fixed]
+               background-position:[top,right,center,bottom,pixels]
+          }
+     </style>
+</head>
+
+
+
+
+
+FAQ: Explain HTML Some Semantic Elements?
+Ans:
+1.<header>
+2.<footer>
+3.<section>
+4.<main>
+5.<aside>
+6.<article>
+7.<dialog>
+8.<figure>
+9.<figcaption>
+10.<nav>
+11.<address>
 
 
 
@@ -323,8 +384,4 @@ Ans: A responsive design allows the page to optimize its content
 
 
 
-
-
-
-
-     
+ 
