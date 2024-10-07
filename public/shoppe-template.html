@@ -42,6 +42,55 @@
         .bi-lightning-fill{
             color: gold;
         }
+
+        main{
+            height: 500px;
+            display: grid;
+            grid-template-columns: 4fr 4fr 4fr;
+            margin-top: 10px;
+        }
+        .women-fashion{
+            background-image: url("./images/women-fashion.jpg");
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            opacity: 0.7;
+        }
+        .kids-fashion{
+            background-image: url("./images/kids-fashion.jpg");
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            opacity: 0.7;
+        }
+        .men-fashion{
+            background-image: url("./images/men-fashion.jpg");
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            opacity: 0.7;
+        }
+        .main-title{
+            font-size: 50px;
+            color: white;
+            font-family: Arial black;
+            text-shadow: 2px 2px 2px black;
+        }
+        .btn-shop{
+            background-color: white;
+            padding: 10px;
+            width: 100px;
+            text-align: center;
+        }
+        .women-fashion:hover, .kids-fashion:hover, .men-fashion:hover{
+            opacity: 1;
+        }
     </style>
 </head>
 
@@ -67,11 +116,33 @@
             <span class="bi bi-cart3"></span>
         </div>
     </header>
-    <article>
-        <span class="bi bi-lightning-fill"></span>
-        <span>HAPPLY HOLIDAY DEALS ON EVERYTHING</span>
-        <span class="bi bi-lightning-fill"></span>
-    </article>
+    <section>
+        <article>
+            <span class="bi bi-lightning-fill"></span>
+            <span>HAPPLY HOLIDAY DEALS ON EVERYTHING</span>
+            <span class="bi bi-lightning-fill"></span>
+        </article>
+        <main>
+            <div class="women-fashion">
+                <div class="main-title">Women</div>
+                <div class="btn-shop">
+                    Women Kids <span class="bi bi-arrow-right"></span>
+                </div>
+            </div>
+            <div class="kids-fashion">
+                <div class="main-title">Kids</div>
+                <div class="btn-shop">
+                    Shop Kids <span class="bi bi-arrow-right"></span>
+                </div>
+            </div>
+            <div class="men-fashion">
+                <div class="main-title">Men</div>
+                <div class="btn-shop">
+                    Shop Men <span class="bi bi-arrow-right"></span>
+                </div>
+            </div>
+        </main>
+    </section>
 </body>
 
 </html>
