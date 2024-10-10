@@ -1,144 +1,125 @@
 <!DOCTYPE html>
-<html lang="en-in">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shopper</title>
     <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <title>Netflix Home</title>
     <style>
+        body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100vh;
+            background-size: cover;
+        }
+
+        .shade {
+            width: 100%;
+            height: 100vh;
+            background-color: rgba(0, 0, 0, 0.6);
+            color: white;
+        }
+
         header {
-            font-size: 24px;
             font-family: Arial;
+            color: white;
             display: flex;
             flex-direction: row;
             justify-content: space-between;
-            padding: 20px;
+            padding: 30px;
         }
-        nav {
-            font-size: 18px;
-        }
+
         .brand-title {
+            color: red;
             font-weight: bold;
-            font-size: 26px;
+            font-size: 40px;
         }
-        nav span {
-            margin-left: 10px;
-            margin-right: 10px;
-        }
-        .shortcut-icons {
-            font-size: 18px;
-        }
-        .shortcut-icons span {
-            margin-right: 10px;
-        }
-        article {
-            text-align: center;
-            background-color: black;
-            color:white;
-            padding: 15px;
-            font-size: 18px;
-        }
-        .bi-lightning-fill {
-            color:gold;
-        }
-        main {
-            height: 500px;
-            display: grid;
-            grid-template-columns: 4fr 4fr 4fr;
-            margin-top: 10px;
-        }
-        .women-fashion {
-            background-image: url("./public/images/women-fashion.jpg");
-            background-size: cover;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-around;
-            align-items: center;
-            opacity: 0.7;
-        }
-        .men-fashion {
-            background-image: url("./public/images/men-fashion.jpg");
-            background-size: cover;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-around;
-            align-items: center;
-            opacity: 0.7;
-        }
-        .kids-fashion {
-            background-image: url("./public/images/kids-fashion.jpg");
-            background-size: cover;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-around;
-            align-items: center;
-            opacity: 0.7;
-        }
-        .main-title {
-            font-size: 50px;
-            color:white;
-            font-family: Arial Black;
-            text-shadow: 2px 2px 2px black;
-        }
-        .btn-shop {
-            background-color: white;
+
+        .language {
+            border: 1px solid white;
             padding: 10px;
-            width: 130px;
-            text-align: center;
+            border-radius: 6px;
+            margin-right: 20px;
+            background-color: rgba(0, 0, 0, 0.6);
         }
-        .women-fashion:hover, .kids-fashion:hover, .men-fashion:hover {
-            opacity: 1;
+
+        .btn-sign-in {
+            background-color: red;
+            padding: 10px;
+            border-radius: 6px;
+        }
+
+        section {
+            font-family: Arial;
+            text-align: center;
+            margin-top: 100px;
+        }
+
+        .section-title {
+            font-size: 40px;
+            font-weight: bold;
+        }
+
+        .section-sub-title {
+            font-size: 18px;
+            margin-top: 20px;
+            margin-bottom: 40px;
+        }
+        .main-title{
+            margin-bottom: 20px;
+        }
+
+        .email {
+            border: 1px solid gray;
+            display: inline-block;
+            width: 300px;
+            padding: 20px;
+            text-align: left;
+            background-color: rgba(0, 0, 0, 0.6);
+            margin-right: 20px;
+        }
+
+        .btn-start {
+            background-color: red;
+            display: inline-block;
+            padding: 20px;
+            width: 150px;
+            font-weight: bold;
         }
     </style>
 </head>
-<body>
-    <header>
-        <div>
-            <span class="brand-title">Shopper.</span>
-        </div>
-        <div>
-            <nav>
-                <span>Home</span>
-                <span>Catalog</span>
-                <span>Pages</span>
-                <span>Shop</span>
-                <span>Docs</span>
-                <span>Blog</span>
-            </nav>
-        </div>
-        <div class="shortcut-icons">
-            <span class="bi bi-search"></span>
-            <span class="bi bi-person"></span>
-            <span class="bi bi-heart"></span>
-            <span class="bi bi-cart4"></span>
-        </div>
-    </header>
-    <section>
-        <article>
-            <span class="bi bi-lightning-fill"></span>
-            <span> HAPPY HOLIDAY DEALS ON EVERYTHING </span>
-            <span class="bi bi-lightning-fill"></span>
-       </article>
-       <main>
-           <div class="women-fashion">
-               <div class="main-title">Women</div>
-               <div class="btn-shop">
-                  Shop Women <span class="bi bi-arrow-right"></span>
-               </div>
-           </div>
-           <div class="kids-fashion">
-            <div class="main-title">Kids</div>
-               <div class="btn-shop">
-                  Shop Kids <span class="bi bi-arrow-right"></span>
-               </div>
-           </div>
-           <div class="men-fashion">
-            <div class="main-title">Men</div>
-               <div class="btn-shop">
-                  Shop Men <span class="bi bi-arrow-right"></span>
-               </div>
-           </div>
-       </main>
-    </section>
+
+<body background="./public/images/netflix-bg.jpg">
+    <div class="shade">
+        <header>
+            <div>
+                <span class="brand-title">NETFLIX</span>
+            </div>
+            <div>
+                <span class="language"><span class="bi bi-translate"></span> English <span
+                        class="bi bi-chevron-down"></span></span>
+                <span class="btn-sign-in">SignIn</span>
+            </div>
+        </header>
+        <section>
+            <div class="section-title">
+                Unlimited movies, TV<br>
+                shows and more
+            </div>
+            <div class="section-sub-title">
+                Starts at ₹149. Cancel at any time.
+            </div>
+            <main>
+                <div class="main-title">Ready to watch? Enter your email to create or restart your membership.</div>
+                <div>
+                    <span class="email">Email Address</span>
+                    <span class="btn-start">Get Started <span class="bi bi-chevron-right"></span></span>
+                </div>
+            </main>
+        </section>
+    </div>
 </body>
+
 </html>

@@ -1,54 +1,58 @@
 <!DOCTYPE html>
-<html lang="en-in">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shopper</title>
-    <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <title>Online Shopping</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
     <style>
         header {
-            font-size: 24px;
-            font-family: Arial;
             display: flex;
             flex-direction: row;
             justify-content: space-between;
+            font-family: Arial;
+            font-size: 20px;
             padding: 20px;
         }
-        nav {
-            font-size: 18px;
-        }
+
         .brand-title {
             font-weight: bold;
             font-size: 26px;
         }
+
         nav span {
-            margin-left: 10px;
+            font-size: 18px;
             margin-right: 10px;
+            margin-left: 10px;
         }
-        .shortcut-icons {
+
+        .shortcut-icons span {
+            margin-left: 8px;
             font-size: 18px;
         }
-        .shortcut-icons span {
-            margin-right: 10px;
-        }
+
         article {
-            text-align: center;
             background-color: black;
-            color:white;
+            color: white;
+            text-align: center;
             padding: 15px;
             font-size: 18px;
         }
+
         .bi-lightning-fill {
-            color:gold;
+            color: gold;
         }
+
         main {
-            height: 500px;
             display: grid;
             grid-template-columns: 4fr 4fr 4fr;
             margin-top: 10px;
+            height: 500px;
         }
+
         .women-fashion {
-            background-image: url("./public/images/women-fashion.jpg");
+            background-image: url("../public/images/women-fashion.jpg");
             background-size: cover;
             display: flex;
             flex-direction: column;
@@ -56,17 +60,9 @@
             align-items: center;
             opacity: 0.7;
         }
-        .men-fashion {
-            background-image: url("./public/images/men-fashion.jpg");
-            background-size: cover;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-around;
-            align-items: center;
-            opacity: 0.7;
-        }
+
         .kids-fashion {
-            background-image: url("./public/images/kids-fashion.jpg");
+            background-image: url("../public/images/kids-fashion.jpg");
             background-size: cover;
             display: flex;
             flex-direction: column;
@@ -74,80 +70,93 @@
             align-items: center;
             opacity: 0.7;
         }
+
+        .men-fashion {
+            background-image: url("../public/images/men-fashion.jpg");
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            opacity: 0.7;
+        }
+
         .main-title {
             font-size: 50px;
-            color:white;
-            font-family: Arial Black;
+            font-weight: bold;
+            font-family: Arial black;
             text-shadow: 2px 2px 2px black;
+            color: white;
         }
+
         .btn-shop {
             background-color: white;
             padding: 10px;
             width: 130px;
             text-align: center;
         }
-        .women-fashion:hover, .kids-fashion:hover, .men-fashion:hover {
+
+        .women-fashion:hover,.kids-fashion:hover,.men-fashion:hover {
             opacity: 1;
         }
-        section {
+        section{
             height: 700px;
         }
-        footer  {
+        footer{
             background-color: black;
-            color:white;
+            color: white;
             padding: 20px;
             font-family: Arial;
         }
-        .row-1 {
+        .row-1{
             text-align: center;
             margin-top: 50px;
         }
-        .footer-title {
+        .footer-title{
             font-size: 30px;
             margin-bottom: 40px;
         }
-        .email {
-            display: inline-block;
+        .email{
             background-color: rgba(128, 127, 127, 0.5);
-            padding: 20px;
-            width: 300px;
-            text-align: left;
-        }
-        .btn-subscribe {
-            background-color: rgb(111, 111, 111);
-            color:white;
-            padding: 20px;
-            width: 120px;
             display: inline-block;
+            width: 300px;
+            padding: 20px;
+            text-align:left;
+        }
+        .btn-subscribe{
+            background-color: rgb(111, 111, 111);
+            display: inline-block;
+            width: 120px;
+            padding: 20px;
             margin-left: 20px;
         }
-        .row-2 {
+        .row-2{
             margin-top: 100px;
             display: grid;
             grid-template-columns: 2.4fr 2.4fr 2.4fr 2.4fr 2.4fr;
         }
-        .service-title {
+        .service-title{
             font-size: 20px;
             font-weight: bold;
-            margin-bottom: 20px;
-            display: block;
-        }
-        .service-title~span {
             display: block;
             margin-bottom: 20px;
         }
-        .footer-brand-title {
+        .service-title~span{
+            display: block;
+            margin-bottom: 20px;
+        }
+        .footer-brand-title{
             font-size: 30px;
             font-weight: bold;
             margin-bottom: 20px;
         }
-        aside span {
-            font-size: 14px;
-            margin-right: 5px;
+        aside span{
+            font-size: 18px;
+            margin-right: 6px;
         }
-        
     </style>
 </head>
+
 <body>
     <header>
         <div>
@@ -167,35 +176,35 @@
             <span class="bi bi-search"></span>
             <span class="bi bi-person"></span>
             <span class="bi bi-heart"></span>
-            <span class="bi bi-cart4"></span>
+            <span class="bi bi-cart3"></span>
         </div>
     </header>
     <section>
         <article>
             <span class="bi bi-lightning-fill"></span>
-            <span> HAPPY HOLIDAY DEALS ON EVERYTHING </span>
+            <span>HAPPY HOLIDAY DEALS ON EVERYTHING</span>
             <span class="bi bi-lightning-fill"></span>
-       </article>
-       <main>
-           <div class="women-fashion">
-               <div class="main-title">Women</div>
-               <div class="btn-shop">
-                  Shop Women <span class="bi bi-arrow-right"></span>
-               </div>
-           </div>
-           <div class="kids-fashion">
-            <div class="main-title">Kids</div>
-               <div class="btn-shop">
-                  Shop Kids <span class="bi bi-arrow-right"></span>
-               </div>
-           </div>
-           <div class="men-fashion">
-            <div class="main-title">Men</div>
-               <div class="btn-shop">
-                  Shop Men <span class="bi bi-arrow-right"></span>
-               </div>
-           </div>
-       </main>
+        </article>
+        <main>
+            <div class="women-fashion">
+                <div class="main-title">Women</div>
+                <div class="btn-shop">
+                    Shops Women <span class="bi bi-arrow-right"></span>
+                </div>
+            </div>
+            <div class="kids-fashion">
+                <div class="main-title">Kids</div>
+                <div class="btn-shop">
+                    Shops Kids <span class="bi bi-arrow-right"></span>
+                </div>
+            </div>
+            <div class="men-fashion">
+                <div class="main-title">Men</div>
+                <div class="btn-shop">
+                    Shops Men <span class="bi bi-arrow-right"></span>
+                </div>
+            </div>
+        </main>
     </section>
     <footer>
         <div class="row-1">
@@ -239,7 +248,7 @@
             </div>
             <div>
                 <address>
-                   <span class="service-title"> Contact</span>
+                    <span class="service-title">Contact</span>
                     <span>1-202-555-0105</span>
                     <span>1-202-555-0106</span>
                     <span>help@shopper.com</span>
@@ -247,5 +256,7 @@
             </div>
         </div>
     </footer>
+
 </body>
+
 </html>
