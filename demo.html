@@ -1,46 +1,93 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-in">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopper</title>
     <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.css">
-    <link rel="shortcut icon" href="./public/images/logo.ico">
-    <title>Online-Shopping</title>
     <style>
-        header{
-            display: flex;
-            flex-direction:row;
-            justify-content: space-between;
-            font-size: 22px;
-            padding: 20px;
-            font-family:Arial;
-        }
-        .brand-title{
+        header {
             font-size: 24px;
-            font-weight: bold;
+            font-family: Arial;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 20px;
         }
-        nav{
+        nav {
             font-size: 18px;
         }
-        nav span{
+        .brand-title {
+            font-weight: bold;
+            font-size: 26px;
+        }
+        nav span {
             margin-left: 10px;
             margin-right: 10px;
         }
-        .shortcut-icons{
-            font-size:18px;
+        .shortcut-icons {
+            font-size: 18px;
         }
-        .shortcut-icons span{
-            margin-right:10px;
+        .shortcut-icons span {
+            margin-right: 10px;
         }
-        article{
-            text-align:center;
-            background-color:black;
+        article {
+            text-align: center;
+            background-color: black;
             color:white;
-            padding: 14px;
-            font-size: 16px;
+            padding: 15px;
+            font-size: 18px;
         }
-        .bi-lightning-fill{
-            color: gold;
+        .bi-lightning-fill {
+            color:gold;
+        }
+        main {
+            height: 500px;
+            display: grid;
+            grid-template-columns: 4fr 4fr 4fr;
+            margin-top: 10px;
+        }
+        .women-fashion {
+            background-image: url("./public/images/women-fashion.jpg");
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            opacity: 0.7;
+        }
+        .men-fashion {
+            background-image: url("./public/images/men-fashion.jpg");
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            opacity: 0.7;
+        }
+        .kids-fashion {
+            background-image: url("./public/images/kids-fashion.jpg");
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            opacity: 0.7;
+        }
+        .main-title {
+            font-size: 50px;
+            color:white;
+            font-family: Arial Black;
+            text-shadow: 2px 2px 2px black;
+        }
+        .btn-shop {
+            background-color: white;
+            padding: 10px;
+            width: 130px;
+            text-align: center;
+        }
+        .women-fashion:hover, .kids-fashion:hover, .men-fashion:hover {
+            opacity: 1;
         }
     </style>
 </head>
@@ -53,23 +100,45 @@
             <nav>
                 <span>Home</span>
                 <span>Catalog</span>
-                <span>Shop</span>
                 <span>Pages</span>
-                <span>Blog</span>
+                <span>Shop</span>
                 <span>Docs</span>
+                <span>Blog</span>
             </nav>
         </div>
         <div class="shortcut-icons">
             <span class="bi bi-search"></span>
             <span class="bi bi-person"></span>
             <span class="bi bi-heart"></span>
-            <span class="bi bi-cart3"></span>
+            <span class="bi bi-cart4"></span>
         </div>
     </header>
-    <article>
-        <span class="bi bi-lightning-fill"></span>
-            HAPPLY HOLIDAY DEALS ON EVERYTHING 
-        <span class="bi bi-lightning-fill"></span>
-    </article>
+    <section>
+        <article>
+            <span class="bi bi-lightning-fill"></span>
+            <span> HAPPY HOLIDAY DEALS ON EVERYTHING </span>
+            <span class="bi bi-lightning-fill"></span>
+       </article>
+       <main>
+           <div class="women-fashion">
+               <div class="main-title">Women</div>
+               <div class="btn-shop">
+                  Shop Women <span class="bi bi-arrow-right"></span>
+               </div>
+           </div>
+           <div class="kids-fashion">
+            <div class="main-title">Kids</div>
+               <div class="btn-shop">
+                  Shop Kids <span class="bi bi-arrow-right"></span>
+               </div>
+           </div>
+           <div class="men-fashion">
+            <div class="main-title">Men</div>
+               <div class="btn-shop">
+                  Shop Men <span class="bi bi-arrow-right"></span>
+               </div>
+           </div>
+       </main>
+    </section>
 </body>
 </html>

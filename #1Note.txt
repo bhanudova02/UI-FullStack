@@ -1667,7 +1667,6 @@ Example:
 --------
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -1676,28 +1675,25 @@ Example:
     <style>
         header {
             background-color: #6f42c1;
-            color: white;
+            color:white;
             padding: 20px;
-            font-style: 20px;
-            font-family: Arial;
+            font-size: 20px;
             display: flex;
             flex-direction: row;
             justify-content: space-between;
             align-items: center;
+            font-family: Arial;
         }
-
         .bi-bootstrap-fill {
             font-size: 30px;
             margin-right: 20px;
         }
-
         nav span {
             font-size: 18px;
             margin-right: 20px;
         }
-
         .search-bar {
-            background-color:#8049e6 ;
+            background-color: #6f22ff;
             padding: 5px;
             display: inline-block;
             width: 300px;
@@ -1707,23 +1703,21 @@ Example:
             justify-content: space-between;
             border-radius: 5px;
         }
-
         .btn-ctrl {
             background-color: darkslateblue;
             font-size: 12px;
             padding: 5px;
         }
-        .bi-search{
+        .bi-search {
             font-size: 18px;
         }
-        .shortcut-icons span{
-            margin-left: 5px;
+        .shortcut-icons span {
+            margin-left: 5px ;
             margin-right: 5px;
             font-size: 16px;
         }
     </style>
 </head>
-
 <body>
     <header>
         <div>
@@ -1738,8 +1732,8 @@ Example:
         </div>
         <div>
             <span class="search-bar">
-                <span class="bi bi-search">Search</span>
-                <span class="btn-ctrl">CTRL K</span>
+                <span class="bi bi-search"> Search </span>
+                <span class="btn-ctrl"> CTRL K </span>
             </span>
         </div>
         <div class="shortcut-icons">
@@ -1747,14 +1741,14 @@ Example:
             <span class="bi bi-twitter"></span>
             <span class="bi bi-circle"></span>
             <span> | </span>
-            <span>v5.3 <span class="bi bi-chevron-down"></span></span>
+            <span> v5.3 <span class="bi bi-chevron-down"></span> </span>
             <span> | </span>
-            <span class="bi bi-sun-fill"> <span class="bi bi-chevron-down"></span></span>
+            <span class="bi bi-sun-fill"> <span class="bi bi-chevron-down"></span> </span>
         </div>
     </header>
 </body>
-
 </html>
+
 
 
 
@@ -1774,7 +1768,7 @@ Syntax:
 <section>
 
 </section>
-<footer> Footer </footer
+<footer> Footer </footer>
 
 
 
@@ -1782,7 +1776,7 @@ Syntax:
           ----------------------
 -Main is a technial term that refers to "Entry" point.
 -Every Web application keeps an entriy point for new users.
--There can be multiple entry points in pa page
+-There can be multiple entry points in  page
 
 CSS Bakground Image:
 -------------------
@@ -1791,7 +1785,7 @@ background-image:  it sets background image by accessing the URL
                    of resources.
 
 background-size:   
-background-position
+background-position 
 background-repeat
 background-attachment
 
@@ -1843,53 +1837,48 @@ Example Shopper-Template:
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
-    <title>Document</title>
+    <title>Online Shopping</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.css">
     <style>
         header{
-            font-size:22px;
-            font-family: Arial;
             display: flex;
             flex-direction:row;
             justify-content: space-between;
+            font-family: Arial;
+            font-size: 20px;
             padding: 20px;
-        }
-        nav{
-            font-size: 18px;
         }
         .brand-title{
             font-weight: bold;
-            font-size: 24px;
+            font-size: 26px;
         }
         nav span{
-            margin-left: 10px;
-            margin-right: 10px;
-        }
-        .shortcut-icons{
             font-size: 18px;
+            margin-right: 10px;
+            margin-left: 10px;
         }
         .shortcut-icons span{
-           margin-right: 10px;
+            margin-left:8px;
+            font-size: 18px;
         }
         article{
-            text-align: center;
             background-color: black;
             color: white;
-            padding: 14px;
-            font-size: 16px;
+            text-align: center;
+            padding: 15px;
+            font-size: 18px;
         }
         .bi-lightning-fill{
             color: gold;
         }
-
         main{
-            height: 500px;
             display: grid;
-            grid-template-columns: 4fr 4fr 4fr;
+            grid-template-columns:4fr 4fr 4fr;
             margin-top: 10px;
+            height: 500px;
         }
-        .women-fashion{
-            background-image: url("./images/women-fashion.jpg");
+        .women-fashion {
+            background-image: url("./public/images/women-fashion.jpg");
             background-size: cover;
             display: flex;
             flex-direction: column;
@@ -1898,7 +1887,7 @@ Example Shopper-Template:
             opacity: 0.7;
         }
         .kids-fashion{
-            background-image: url("./images/kids-fashion.jpg");
+            background-image: url("./public/images/kids-fashion.jpg");
             background-size: cover;
             display: flex;
             flex-direction: column;
@@ -1907,7 +1896,7 @@ Example Shopper-Template:
             opacity: 0.7;
         }
         .men-fashion{
-            background-image: url("./images/men-fashion.jpg");
+            background-image: url("./public/images/men-fashion.jpg");
             background-size: cover;
             display: flex;
             flex-direction: column;
@@ -1917,14 +1906,15 @@ Example Shopper-Template:
         }
         .main-title{
             font-size: 50px;
-            color: white;
+            font-weight: bold;
             font-family: Arial black;
             text-shadow: 2px 2px 2px black;
+            color: white;
         }
         .btn-shop{
             background-color: white;
             padding: 10px;
-            width: 100px;
+            width: 130px;
             text-align: center;
         }
         .women-fashion:hover, .kids-fashion:hover, .men-fashion:hover{
@@ -1942,10 +1932,10 @@ Example Shopper-Template:
             <nav>
                 <span>Home</span>
                 <span>Catalog</span>
+                <span>Pages</span>
                 <span>Shop</span>
-                <span>Pages </span>
-                <span>Blog</span>
                 <span>Docs</span>
+                <span>Blog</span>
             </nav>
         </div>
         <div class="shortcut-icons">
@@ -1958,30 +1948,427 @@ Example Shopper-Template:
     <section>
         <article>
             <span class="bi bi-lightning-fill"></span>
-            <span>HAPPLY HOLIDAY DEALS ON EVERYTHING</span>
+            <span>HAPPY HOLIDAY DEALS ON EVERYTHING</span>
             <span class="bi bi-lightning-fill"></span>
         </article>
         <main>
             <div class="women-fashion">
                 <div class="main-title">Women</div>
                 <div class="btn-shop">
-                    Women Kids <span class="bi bi-arrow-right"></span>
+                    Shops Women <span class="bi bi-arrow-right"></span>
                 </div>
             </div>
             <div class="kids-fashion">
                 <div class="main-title">Kids</div>
                 <div class="btn-shop">
-                    Shop Kids <span class="bi bi-arrow-right"></span>
+                    Shops Kids <span class="bi bi-arrow-right"></span>
                 </div>
             </div>
             <div class="men-fashion">
                 <div class="main-title">Men</div>
                 <div class="btn-shop">
-                    Shop Men <span class="bi bi-arrow-right"></span>
+                    Shops Men <span class="bi bi-arrow-right"></span>
                 </div>
-            </div>
+            </div>  
         </main>
     </section>
+
+</body>
+
+</html>           
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Day-13 Class
+------------
+Body Semantics
+-header
+-nav
+-article
+-section
+-main
+
+
+
+
+
+
+
+6.- 
+It refers to "Hue, Saturation and Lightning".
+- Hue is an angle from 0 to 360deg.
+O to 120   Red
+121 to 240 Green
+241 to 360 Blue
+
+-Saturation is grey % from 1 to 100%
+-Lightning is brightness from 1 to 100%
+
+
+Syntax:
+-------
+{
+    color:hsl(hue,sat,light)
+}
+
+
+Ex:
+---
+{
+    background-color:hsl(10deg,50%,20%);
+}
+
+7.hsla()
+-Hue, Saturation, lightness and alpha.
+-Alpha from 0 to 1
+
+Syntax:
+-------
+{
+    color:hsla(10deg,50%,0.5)
+}
+
+
+8.Gradent Colors
+-it is possible by uisng background-img property of CSS
+-Gradent is set of colors
+-it can be "Linear Gradent" Or "Radial Grandent".
+
+Syntax:
+-------
+{
+    background-image:linear-gradent(direction, color1,color2..)
+}
+
+
+
+Example:
+-------
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+           background-image: linear-gradient(to top right, red 50%,yellow,green);
+           height: 100vh;
+        }
+    </style>
+</head>
+<body>
+    
+</body>
+</html>
+
+
+
+
+Example:
+--------
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+           background-image:radial-gradient(red,yellow,green);
+           height: 100vh;
+        }
+    </style>
+</head>
+<body>
+    
+</body>
+</html>
+
+
+
+
+
+
+Example:
+-------
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <title>Document</title>
+    <style>
+        body{
+            height: 100vh;
+            background-size: cover;
+        }
+        .shade{
+            height: 100vh;
+            background-color: rgba(0,0,0,0.7);
+            margin-top: -10px;
+            margin-left: -10px;
+            width: 101.35%;
+        }
+        header{
+            font-family: Arial;
+            color: white;
+            padding: 30px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .brand-title{
+            color: red;
+            font-size: 40px;
+            font-weight: bold;
+        }
+        .language{
+            border: 1px solid white;
+            padding: 10px;
+            border-radius: 5px ;
+            margin-right: 20px;
+            background-color: rgba(0,0,0,0.6);
+        }
+        .btn-sign{
+            background-color: red;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        section{
+            color: white;
+            text-align: center;
+            margin-top: 100px;
+            font-family: Arial;
+        }
+        .section-title{
+            font-size: 40px;
+            font-weight: bold;
+        }
+        .section-subtitle{
+            font-size: 16px;
+            margin-top: 20px;
+            margin-bottom: 40px;
+        }
+        .email{
+            border:1px solid gray;
+            padding: 20px;
+            display: inline-block;
+            width: 300px;
+            text-align: left;
+            background-color: rgba(0,0,0,0.5);
+            margin-right: 20px;
+        }
+        .btn-start{
+            padding: 20px;
+            background-color: red;
+            color: white;
+            width: 120px;
+        }
+    </style>
+</head>
+<body background="./images/netflix-bg.jpg">
+    <div class="shade">
+        <header>
+            <div>
+                <span class="brand-title">NETFLIX</span>
+            </div>
+            <div>
+                <span class="language"> <span class="bi bi-translate"></span>English <span class="bi bi-chevron-down"></span></span>
+                <span class="btn-sign">SignIn</span>
+            </div>
+        </header>
+        <section>
+            <div class="section-title">
+                Unlimited movies,<br> TV shows and more
+            </div>
+            <div class="section-subtitle">
+                Starts at ₹149. Cancel at any time.
+            </div>
+            <main>
+                <div class="main-title">Ready to watch? Enter your email to create or restart your membership</div>
+                <div>
+                    <span class="email">Email Address</span>
+                    <span class="btn-start">Get Started<span  class="bi bi-chevron-right"></span></span>
+                </div>
+            </main>
+        </section>
+    </div>
+</body>
+</html>
+
+
+
+
+                <footer> Semantic
+            -----------------------
+-Footer is a container that defines content to display at bottom margin of page.
+-Typically footer comprises of services, contact details, copyrights.
+-
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Day-14 Class 
+------------
+CSS Rational Selector
+    element1 eleemnt2 {}    refers to element2 inside element
+    element1 + element{}    refers to adjucent
+
+
+    
+Syntax:
+------
+nav span{}          all span elmeents inside span
+nav+span{}          the adjacent span after nav. [first]
+nav~span{}          all span elements after nav but within the block
+
+
+
+Example:FlipCartFooter
+----------------------
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        footer{
+            display: grid;
+            grid-template-columns:6fr 6fr;
+            background-color: black;
+            color: white;
+            padding: 10px;
+            font-size: 20px;
+            height: 200px;
+        }
+        .left-pannel{
+            display: grid;
+            grid-template-columns: 3fr 3fr 3fr 3fr;
+        }
+        .right-pannel{
+            display: grid;
+            grid-template-columns: 6fr 6fr;
+            border-left: 1px solid white;
+            padding-left: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <footer>
+        <div class="left-pannel">
+            <div>
+                Col-1
+            </div>
+            <div>
+                Col-2
+            </div>
+            <div>
+                Col-3
+            </div>
+            <div>
+                Col-4
+            </div>
+        </div>
+        <div class="right-pannel">
+            <div>
+                Col-1
+            </div>
+            <div>
+                Col-2
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
@@ -1991,9 +2378,92 @@ Example Shopper-Template:
 
 
 
+Summary:
+--------
+header
+footer
+section
+main
+nav
+aside
+article
+address
+
+
+
+                    <dialog> Simantic
+                -----------------------
+-it is used to configured popups in a page
+-Dialog is hidden by defalut, you have to show dialog using "open" attribute
+-Dynamically dialog is controlled with Script. [JavaScript]
+
+Syntax:
+-------
+<dialog open>
+..your attribute..
+</dialog>
+
+
+
+Example:
+--------
+foolow
+
+
+
+                <Figure> & <Figcaption>
+                -----------------------
+-"Figure" container is used to dispaly image with a caption
+-"Figcaption" sets caption for image to make it SEO friendly
+
+Synax:
+------
+<figure>
+..Your Image..
+<figcaption> Caption</figcaption>
+</figure>
+
+
+
+
+                    Body Entities and Semantics
+                    ---------------------------
+-Developers can use various Edotors for desinginn html page.
+-Editor can't display the content exactly as defined in soruce code.
+
+1.line break            <br>
+2.blank space           &nbsp; [non-breakable space]
+
+
+FAQ: What is difference between <br> & <br/>?
+Ans: There is no <br/> in HTML.
 
 
 
 
 
-                    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

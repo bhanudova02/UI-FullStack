@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dialog</title>
+    <link ref="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+        dialog{
+            width: 300px;
+            border: 1px solid gray;
+            border-radius: 10px;
+        }
+        .dialog-header{
+            background-color: rgb(70, 70, 202);
+            color: white;
+            font-size: 25px;
+            font-weight: bold;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .dialog-title{
+            font-size: 22px;
+            font-weight: bold;
+            font-family: Arial;
+        }
+    </style>
+</head>
+<body>
+    <dialog open>
+        <div class="dialog-header">
+            <span class="bi bi-person-fill">ASK DISHA</span>
+            <span class="bi bi-x"></span>
+        </div>
+        <div class="dialog-body">
+            <div class="dialog-title"></div>
+            <div>How May I Help Your Today</div>
+        </div>
+    </dialog>
+</body>
+</html>
